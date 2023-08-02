@@ -256,3 +256,52 @@ abbr {
     display: inline-block;
     margin: 0 2rem;
 }
+
+/*quotes*/
+.quoteContainer {
+    background-color: #5abbad;
+    padding: 2.88rem 1rem;
+    color: white;
+    border-bottom: 12px solid #48b9a1;
+}
+
+.quoteSlide {
+    display: flex;
+    flex-direction: column;
+    gap: 2.88rem;
+}
+
+.quoteSlide h2 {
+    font-weight: normal;
+    margin-bottom: .8rem;
+    font-style: italic;
+}
+
+.quoteSlide figcaption {
+    text-align: center;
+}
+
+/*footer*/
+.footer {
+    color: #40464a;
+    background-color: #232a2d;
+    padding: 2.12rem 0;
+}
+
+.footer p {
+    margin-bottom: 1rem;
+}
+
+.containerList {
+    margin-left: 1.2rem;
+}
+
+.containerList li {
+    list-style: none;
+}
+
+.containerList a {
+    color: #40464a;
+    text-decoration: none;
+    font-weight: 600;
+}
