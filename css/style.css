@@ -216,3 +216,43 @@ abbr {
     gap: 1rem;
     margin-top: 1rem;
 }
+
+/*Last Articles*/
+.lastArticles__containerTitle {
+    background-color: #5abbad;
+    padding: 1rem;
+}
+
+.lastArticles__title {
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: white;
+}
+
+.lastArticles__thumbs img {
+    display: block;
+    width: 100%;
+}
+
+.lastArticles__thumbs {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(15.62rem, 1fr));
+    grid-auto-rows: auto;
+}
+
+/*Slider*/
+.containerSlider {
+    background-color: #232a2d;
+    padding: 8rem .78rem;
+    width: 100%;
+    overflow: auto;
+}
+
+.showSlide {
+    white-space: nowrap;
+}
+
+.showSlide figure {
+    display: inline-block;
+    margin: 0 2rem;
+}
