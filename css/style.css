@@ -43,13 +43,13 @@ img {
     display: block;
     color: #aaa;
     text-decoration: none;
+    text-transform: uppercase;
     padding: 1rem;
 
     transition: background, color, .2s ease-in-out;
 }
 
 .headerNav a:hover {
-    background-color: #1f1f1f;
     color: #5abbad;
 }
 
@@ -109,10 +109,10 @@ abbr {
 
 .card {
     padding-bottom: 2rem;
+    border-left: solid 1px #ccc;
 }
 
 .containerCards {
-    border-left: solid 1px #ccc;
     margin-top: 3.22rem;
 }
 
@@ -304,4 +304,84 @@ abbr {
     color: #40464a;
     text-decoration: none;
     font-weight: 600;
+
+    transition: color, .2s ease-in-out;
+}
+
+.containerList a:hover {
+    color: #ccc;
+}
+
+/*Tablet*/
+@media screen and (min-width: 64rem) {
+    .header {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
+
+    .headerLogo {
+        width: 25%;
+        padding: .5rem;
+        /* flex-grow: 1; */
+    }
+
+    .headerNav {
+        width: 75%;
+        background-color: white;
+    }
+
+    .headerNav ul {
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .headerNav li {
+        text-decoration: none;
+        border: none;
+    }
+
+    .headerNav a {
+        display: block;
+        color: #40464a;
+    }
+
+    /*cards*/
+    .containerCards {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        justify-items: center;
+        /* gap: .5rem; */
+        grid-auto-rows: auto;
+    }
+
+    .card {
+        max-width: 20rem;
+    }
+
+    /*middle content*/
+    .middleContentContainer .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: .5rem;
+
+        padding: 1rem 0;
+    }
+
+    .middleContent__text {
+        margin: 0;
+    }
+    
+    /*latest articles*/
+    .lastArticles__thumbs {
+        grid-template-columns: repeat(repeat(6, 1fr));
+    }
 }
