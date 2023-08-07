@@ -17,6 +17,24 @@ img {
     margin: 0 .88rem;
 }
 
+.header {
+    background-color: white;
+}
+
+.js .header {
+    position: fixed;
+    width: 100%;
+}
+
+.headerButton {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+
+    border: none;
+    background-color: transparent;
+}
+
 .headerLogo {
     text-transform: uppercase;
     text-decoration: none;
@@ -33,6 +51,10 @@ img {
     display: block;
     background-color: #232c2c;
     text-align: center;
+}
+
+.js .headerNav {
+    transition: max-height, .4s ease-in-out;
 }
 
 .headerNav li {
@@ -314,6 +336,10 @@ abbr {
 
 /*Tablet*/
 @media screen and (min-width: 64rem) {
+    .headerButton {
+        display: none; /*esconder botao de menu em tablet e em desktop*/
+    }
+
     .header {
         display: flex;
         justify-content: space-around;
