@@ -11,7 +11,6 @@ function Menu(config) {
     let _this = this;
     
     this.button.removeAttribute("style");
-    closeMenu();
 
     //verificando tamanho da tela no browser
     if(this.maxWidth) {
@@ -21,6 +20,10 @@ function Menu(config) {
                 _opened = true;
             }
         })
+    }
+
+    if(window.innerWidth <= _this.maxWidth) {
+        closeMenu();
     }
 
     this.button.addEventListener('click', openOrClose);

@@ -7,3 +7,10 @@ let menu = new Menu( {
     toggleButton: '.headerButton',
     widthEnabled: 1024
 });
+
+let carouselImgs = new Carousel({
+    container: '.containerSlider .showSlide',
+    itens: 'figure',
+    btnPrev: '.btnPrev',
+    btnNext: '.btnNext'
+});

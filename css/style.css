@@ -23,6 +23,7 @@ img {
 
 .js .header {
     position: fixed;
+    z-index: 1;
     width: 100%;
 }
 
@@ -270,6 +271,32 @@ abbr {
     overflow: auto;
 }
 
+.js .containerSlider {
+    overflow: hidden;
+}
+
+.btnPrev,
+.btnNext {
+    display: none;
+}
+
+.js .btnPrev,
+.js .btnNext {
+    display: block;
+    position: absolute;
+    color: white;
+}
+
+.btnPrev {
+    left: 0;
+    top: 50%;
+}
+
+.btnNext {
+    right: 0;
+    top: 50%;
+}
+
 .showSlide {
     white-space: nowrap;
 }
@@ -277,6 +304,33 @@ abbr {
 .showSlide figure {
     display: inline-block;
     margin: 0 2rem;
+}
+
+.js .showSlide {
+    position: relative;
+    width: 100%;
+    max-width: 950px;
+    margin: auto;
+}
+
+.js .showSlide figure {
+    width: 100%;
+    margin: auto;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    transition: opacity .5s;
+}
+
+.js .showSlide img {
+    width: 100%;
+}
+
+.js .showSlide figure.show {
+    opacity: 1;
+    position: static;
 }
 
 /*quotes*/
